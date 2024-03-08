@@ -6,8 +6,7 @@ Project Overview:
 
 Features and Functionality:
 
-Recipe Details: Users can view detailed information about a specific recipe, including ingredients, instructions, and additional notes.
-Save and Favorite Recipes: Users can save recipes for future reference or mark them as favorites for quick access.
+
 Technologies Used:
 
 Screenshots or Demo:
