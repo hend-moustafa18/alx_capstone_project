@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--  Displaying the title of the application making them 2 words to change there color easily -->
+  <header>
+    <h1><span>My</span> <span>Notes</span></h1>
+  </header>
+  <!--  End of Header -->
+
+  <!--  Start of Main Body -->
+
+  <main>
+
+    <!-- Start of Left Section -->
+
+    <section class="left-section">
+      <!-- Input box for searching notes -->
+      <div class="search-box">
+        <input type="text" placeholder="Search by title or content or category">
+      </div>
+      <!-- Dropdown for sorting options -->
+      <div class="sort-box">
+        <div class="sort-options">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="title">Title</option>
+            <option value="date">Date</option>
+            <option value="reset">Reset Sort</option>
+          </select>
+        </div>
+        <!-- Container for buttons -->
+        <div class="buttons"></div>
+        <!-- Button for creating a new note -->
+        <button id="new-note"> New </button>
+        <!-- Button for deleting a note -->
+        <button id="delete-note">Delete</button>
+      </div>
+
+      <!-- Container for displaying the list of notes -->
+      <div class="note-list">
+        <!-- Dynamically populated with JavaScript -->
+      </div>
+    </section>
+    <!-- End of Left Section -->
+
+    <!-- Start of Right Section -->
+
+    <section class="right-section">
+      <!-- Container for the note box -->
+      <div class="note-box">
+        <!-- Input box for note title -->
+        <div class="title-box">
+          <input type="text" placeholder="Title">
+          <button id="attach-file">Attach File</button>
+        </div>
+        <div class="attachment">
+          <!-- Attached file icon appears here -->
+        </div>
+        <textarea placeholder="Note Body"></textarea>
+        <input type="file" id="file-input" style="display: none;">
+      </div>
+    </section>
+    <!-- End of Right Section -->
+  </main>
+    <!--  End of Main Body -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
